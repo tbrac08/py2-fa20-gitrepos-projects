@@ -42,17 +42,15 @@ def UserInfo():
 
 def DataManipulation(UserList):
     
-    print(UserList[0:10])
-    print(UserList[10:20])
-    print(UserList[20:30])
-    print(UserList[30:40])
-    print(UserList[40:50])
-    print(UserList[50:60])
-    print(UserList[60:70])
-    print(UserList[70:80])
-    print(UserList[80:90])
-    print(UserList[90:100])
-                   
+    Counter_One = 0
+    Counter_Two = 10
+    
+    while Counter_One != 100 and Counter_Two != 110:
+        print(UserList[Counter_One:Counter_Two])
+        Counter_One = Counter_One + 10
+        Counter_Two = Counter_Two +10    
+    
+                      
     
 ##############################################################################
 #   Main Program
