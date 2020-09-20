@@ -20,26 +20,53 @@ def GettingUserInfo():
     return UserList
 
 #############################################################################
-#   Printing the list into sections of three
+#  Number to Character change
+#############################################################################
+
+def Number_to_character_change(UserList):
+    
+    user_list_char = []
+    
+    for index in range(len(UserList)):
+        if UserList[index] == 1:
+            print("x")
+            user_list_char.append(UserList)
+        else:
+            print("_")
+            user_list_char.append(UserList)
+            
+    print(user_list_char)
+            
+    return user_list_char
+
+#############################################################################
+# Printing the list into sections of three
 ##############################################################################
-    
-def DataManipulation(UserList):
-    
-    #Counter = 0
-    print(UserList[0:3])
-    print(UserList[3:6])
-    print(UserList[6:9])
-    
+#def DataManipulation(user_list_char):
+#Counter = 0
+    #print(user_list_char[0:3])
+    #print(user_list_char[3:6])
+   # print(user_list_char[6:9])
+
 ##############################################################################
-#   Main Program
+# Main Program
 ##############################################################################
-    
 def main():
-    
+
     UserList = GettingUserInfo()
-    DataManipulation(UserList)
-    
+    user_list_char = Number_to_character_change(UserList)
+    #DataManipulation(user_list_char)
+
 main()
+    
+    
+    
+
+
+
+
+    
+
     
     
     
